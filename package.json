@@ -1,10 +1,13 @@
 {
-    "name": "chrome-extension-svelte-typescript-boilerplate",
-    "version": "3.0.0",
+    "name": "penguin-twitter-video-calls",
+    "version": "6.9",
     "type": "module",
+    "description": "Chrome extension for Twitter video calls",
+    "author": "made-by-chris",
+    "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/nekitcorp/chrome-extension-svelte-typescript-boilerplate.git"
+        "url": "https://github.com/made-by-chris/penguin-twitter-video-calls.git"
     },
     "scripts": {
         "dev": "vite",
