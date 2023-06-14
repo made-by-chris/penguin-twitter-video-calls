@@ -1,0 +1,42 @@
+{
+    "name": "Penguin - Free Twitter Video Calls.",
+    "description": "Free Twitter Video Conference Calls with Screen-Sharing for Private and Public Calls.",
+    "version": "6.9",
+    "manifest_version": 3,
+    "icons": {
+        "16": "src/assets/icons/penguin.png",
+        "32": "src/assets/icons/penguin.png",
+        "48": "src/assets/icons/penguin.png",
+        "128": "src/assets/icons/penguin.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://twitter.com/*"
+            ],
+            "js": [
+                "src/content/index.ts"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "background": {},
+    "options_ui": {
+        "page": "src/options/options.html",
+        "open_in_tab": false
+    },
+    "action": {
+        "default_popup": "src/popup/popup.html",
+        "default_icon": {
+            "16": "src/assets/icons/penguin.png",
+            "32": "src/assets/icons/penguin.png",
+            "48": "src/assets/icons/penguin.png",
+            "128": "src/assets/icons/penguin.png"
+        }
+    },
+    "permissions": [
+        "storage",
+        "scripting",
+        "activeTab"
+    ]
+}
